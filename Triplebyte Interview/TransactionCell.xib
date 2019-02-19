@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionCell" customModule="Triplebyte_Interview" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TransactionCell" customModule="Triplebyte_Interview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TransactionLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5l0-9O-4lm">
+                    <rect key="frame" x="20" y="45" width="131" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="REg-tI-ic7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4H-xp-Hkw">
+                    <rect key="frame" x="20" y="99" width="78" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PriceLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKP-l0-EeY">
+                    <rect key="frame" x="268" y="57.5" width="81" height="20.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qKP-l0-EeY" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="384-zJ-j65"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Y4H-xp-Hkw" secondAttribute="bottom" constant="15" id="Xmf-my-fk9"/>
+                <constraint firstItem="5l0-9O-4lm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ywn-9f-EIh"/>
+                <constraint firstItem="Y4H-xp-Hkw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Zh6-fR-wzD"/>
+                <constraint firstItem="Y4H-xp-Hkw" firstAttribute="top" secondItem="5l0-9O-4lm" secondAttribute="bottom" constant="14" id="aUi-JC-uce"/>
+                <constraint firstItem="qKP-l0-EeY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y4H-xp-Hkw" secondAttribute="trailing" constant="8" id="caC-Z4-2rm"/>
+                <constraint firstItem="5l0-9O-4lm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="45" id="vgJ-GG-jtJ"/>
+                <constraint firstItem="qKP-l0-EeY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5l0-9O-4lm" secondAttribute="trailing" constant="8" id="z6i-Au-7Ka"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qKP-l0-EeY" secondAttribute="trailing" constant="26" id="zbj-3p-bch"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dateLabel" destination="Y4H-xp-Hkw" id="yWQ-Er-fyk"/>
+                <outlet property="priceLabel" destination="qKP-l0-EeY" id="Y1J-aw-Acm"/>
+                <outlet property="transactionLabel" destination="5l0-9O-4lm" id="bkN-wI-xMG"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="-191.1544227886057"/>
+        </view>
+    </objects>
+</document>
